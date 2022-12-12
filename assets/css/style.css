@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/*Removes default settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    
+}
+
+/*Sets the style for the webpage*/
+body {
+    background: url("../images/background/background.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFE91F;
+    text-align: center;
+}
+
+/*Sets the header style*/
+header {
+    display: flex;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+/*Styles the main buttons of the game*/
+
+#image-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 2rem;
+}
+#image-box img {
+    height: 11rem;
+}
+/*Styles the buttons that the player uses to play*/
+
+#r {
+    display: none;
+}
+
+#p {
+    display: none;
+
+}
+
+#s {
+    display: none;
+
+}
+
+.options {
+    
+    background-color: #333234;
+    height: 12rem;
+    width: 12rem;
+    padding-top: 1px;
+    border: 5px solid #FFE91F;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    }
+    
+.options:hover {
+        background-color:#333234;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+/*Sets style to Welcome-area with rules that appeares before the game starts*/
+/*Styles the result messages*/
+.greeting-box {
+    width: 65rem;
+    background-color: #B534D2;
+    margin: auto 0;
+    border: 5px solid #FFE91F;
+    border-radius: 0.5rem;
+}
+#welcome-text {
+    font: 1rem;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+/*Sets style to the lose message that apperes if the player lose*/
+
+#box-lose {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+#box-lose >p {
+    font-size: 5rem;
+}
+
+/*Sets style to the lose message that apperes if the player win*/ 
+
+#box-win {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+
+#box-win >p {
+    font-size: 5rem;
+}
+
+/*Sets style to score-box*/
+#score-box {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid #FFE91F;
+    border-radius: 1rem;
+    background-color: #B534D2;
+    width: 8rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+#score-box >h2 {
+    font-size: 1rem;
+}
+.score {
+    margin: 5px;
+    border: 3px solid #FFE91F;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 2px 8px;
+}
+
+
+/*Styles result message that declare who wins or loses each round*/
+#win-lose {
+    font-size: 1.5rem;
+}
+#info{
+    padding: 1rem;
+    height: 5rem;
+    font-size: 3rem;
+}
+
+/*Styles the button that starts the game*/
+#start {
+    
+    width: 18rem;
+    height: 8rem;
+    background: none;
+    color: #FFE91F;
+    font-size: 3rem;
+    background: #B534D2;
+    border: 6px solid #FFE91F;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#start:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*Styles the button that restarts the game*/
+#restart-box {
+    display: contents;
+}
+
+#restart {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 18rem;
+    height: 8rem;
+    background: none;
+    border: none;
+    color: #FFE91F;
+    font-size: 3rem;
+    background: #B534D2;
+    border: 6px solid #FFE91F;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#restart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* For small screen sizes from 320px wide and up to 600px wide */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+    header {
+        font-size: 1rem;
+    }
+    .greeting-box {
+        width: 18rem;
+    }
+    #image-box {
+        font-size: 1rem;
+        padding: 1rem;
+        margin:0;
+    }
+    #image-box img {
+        height: 6rem;
+    }
+    .options {
+        height: 6rem;
+        width: 6rem;
+        border:2px solid #FFE91F;
+    }
+    #info {
+        font-size: 2rem;
+    }
+    #win-lose {
+        font-size: 2rem;
+    }
+    #start {
+        width: 12rem;
+        height: 5rem;
+    }
+
+    #box-win >p {
+            font-size: 2rem;
+            margin-top: 3rem;
+    }
+
+    #box-lose >p {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    #restart {
+        width: 11rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    #image-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+}

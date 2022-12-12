@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts (Russo One) -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <!--Description and keywords-->
+    <meta name="description" content="Rock, Paper, Scissors, Games, Online games">
+    <!--Title of the website-->
+    <title>Rock-Scissors-Paper</title> 
+</head>
+<body>
+    <header>
+        <h1>ROCK SCISSORS PAPER</h1>
+    </header>
+    <section>
+        <div id="game-area"></div>
+      <!--Score-box for player and computer.-->
+        <div id="score-box">
+            <h2>Scoreboard</h2>
+            <div class="player">
+                <h3 class="score">User: <span id="player-score">0</span></h3>
+            </div>
+            <div class="comp">
+                <h3 class="score">Comp: <span id="comp-score">0</span></h3>
+            </div>
+        </div>
+        <div id="image-box">
+        <div class="greeting-box" id="welcome-box">
+            <h2 id="welcome-title">Welcome!</h2>
+            <p id="welcome-text">Press the start button to enter the Game Area.<br>
+            Chose your hand by clicking one of the Icons to see if you beet the computer.<br>
+            Rock Crushes scissors - Scissors Cuts Paper - Paper Covers rock.
+            </p>
+        </div>
+        <!--Buttons for player to play the game-->
+        <div id="r">
+        <button aria-label="rock" class="options" data-choice="rock"><img src="assets/images/Rock.webp"
+                alt="rock"></button>
+        </div>
+        <div id="s">
+            <button aria-label="scissors" class="options" data-choice="scissors"><img src="assets/images/Scissor.webp"
+                alt="scissors"></button>
+        </div>
+        <div id="p">
+            <button aria-label="paper" class="options" data-choice="paper"><img src="assets/images/paper.webp"
+                alt="paper"></button>
+        </div>
+    </div>
+    <!--Result that says if the player won or lost-->
+    <div id="win-lose"></div>
+    <!--Informs the player of what the computer played-->
+    <div id="info"></div>
+    <!--This is the button to play the game-->
+    <div id="start-box">
+    <div><button aria-label="Start game" id="start">START</button></div>
+    </div>
+    <!--The button that restarts the game-->
+    <div id="restart-box">
+    <div><button aria-label="Play again" id="restart">Play-again?</button></div>
+    </div>
+</section>
+<!--File path to JavaScript-->
+    <script src="assets/js/script.js"></script>  
+</body>
+</html>
